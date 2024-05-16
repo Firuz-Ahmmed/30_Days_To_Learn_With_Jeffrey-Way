@@ -1,5 +1,6 @@
 @extends('components.layouts')
 @section('content')
+
 <div class="container mx-auto mt-8 ">
 <form>
     <div class="space-y-12">
