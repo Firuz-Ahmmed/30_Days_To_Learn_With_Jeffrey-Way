@@ -1,16 +1,14 @@
+
 <?php
-
-
+use App\Http\Controllers\testController;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use App\Models\Jobs;
 
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('/form', function () {
+    return view('form');
 });
-Route::get('/', function () {
-    return view('home');
-});
+Route::post('/form',[testController::class,'index'])->name('form');
 
 Route::get('/jobs', function () {
     return view('jobs',[
